@@ -1,0 +1,254 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta name="author" content="dev.sitechco.ru" />
+    </head>
+<table  border="1">
+    <tr>
+        <td colspan="3">Название (Аббр.): Поле e-mail (chit)</td>
+    </tr>
+    <tr>
+        <td colspan="3">Описание: Базовые проверки поля для e-mail</td>
+    </tr>
+            <tr>
+        <td colspan="3">Статус: Не согласован </td>
+    </tr>
+            <tr>
+        <td colspan="3" style="background-color: #ced1d1;">Проверка валидного адреса</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="background-color: #ced1d1;">Проверьте, что поле корректно обрабатывает эти данные</td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                    </tr>
+        <tr>
+        <td>
+            1        </td>
+        <td>
+            Средний        </td>
+        <td>Валидный email, содержащий строчный и заглавные буквы</td>
+                    </tr>
+        <tr>
+        <td>
+            2        </td>
+        <td>
+            Средний        </td>
+        <td>Начинающийся с цифры в локальной части email</td>
+                    </tr>
+        <tr>
+        <td>
+            3        </td>
+        <td>
+            Средний        </td>
+        <td>Начинающийся с цифры в доменной части email</td>
+                    </tr>
+        <tr>
+        <td>
+            4        </td>
+        <td>
+            Средний        </td>
+        <td>Email c несколькими точками в локальной и доменной части</td>
+                    </tr>
+        <tr>
+        <td>
+            5        </td>
+        <td>
+            Средний        </td>
+        <td>Email с дефисом в локальной части email</td>
+                    </tr>
+        <tr>
+        <td>
+            6        </td>
+        <td>
+            Средний        </td>
+        <td>Email с дефисом в доменной части email</td>
+                    </tr>
+        <tr>
+        <td>
+            7        </td>
+        <td>
+            Средний        </td>
+        <td>Email с нижним подчёркиванием в локальной части email</td>
+                    </tr>
+        <tr>
+        <td>
+            8        </td>
+        <td>
+            Средний        </td>
+        <td>Email с нижним подчёркиванием в доменной части email</td>
+                    </tr>
+        <tr>
+        <td>
+            9        </td>
+        <td>
+            Средний        </td>
+        <td>Длинный Email (локальная часть 64 символа, доменная состоит из 3 участков по 63 символа, разделённых точками)</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                    </tr>
+            <tr>
+        <td colspan="3" style="background-color: #ced1d1;">Проверка на невалидность</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="background-color: #ced1d1;">Проверьте, что форма информирует пользователя о невалидности email</td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                    </tr>
+        <tr>
+        <td>
+            10        </td>
+        <td>
+            Средний        </td>
+        <td>Пустое поле</td>
+                    </tr>
+        <tr>
+        <td>
+            11        </td>
+        <td>
+            Средний        </td>
+        <td>Превышение длины локальной части (максимальная допустимая 64 символа)</td>
+                    </tr>
+        <tr>
+        <td>
+            12        </td>
+        <td>
+            Средний        </td>
+        <td>Превышение длины доменного имени (максимальная допустимая 255 символов)</td>
+                    </tr>
+        <tr>
+        <td>
+            13        </td>
+        <td>
+            Средний        </td>
+        <td>Превышение длины участка доменного имени между точками (максимальная допустимая 63 символа)</td>
+                    </tr>
+        <tr>
+        <td>
+            14        </td>
+        <td>
+            Средний        </td>
+        <td>Отсутствие @ в email</td>
+                    </tr>
+        <tr>
+        <td>
+            15        </td>
+        <td>
+            Средний        </td>
+        <td>Отсутствие локальной части</td>
+                    </tr>
+        <tr>
+        <td>
+            16        </td>
+        <td>
+            Средний        </td>
+        <td>Отсутствие доменной части</td>
+                    </tr>
+        <tr>
+        <td>
+            17        </td>
+        <td>
+            Средний        </td>
+        <td>Содержит две точки подряд</td>
+                    </tr>
+        <tr>
+        <td>
+            18        </td>
+        <td>
+            Средний        </td>
+        <td>Локальная часть начинается с . (точки)</td>
+                    </tr>
+        <tr>
+        <td>
+            19        </td>
+        <td>
+            Средний        </td>
+        <td>Доменная часть начинается с . (точки)</td>
+                    </tr>
+            <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+                    </tr>
+            <tr>
+        <td colspan="3" style="background-color: #ced1d1;">Проверка способа ввода</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="background-color: #ced1d1;">Проверьте, что форма корректно обрабатывает следующие способы ввода</td>
+    </tr>
+    <tr>
+        <td>№</td>
+        <td>Приоритет</td>
+        <td>Проверка</td>
+                    </tr>
+        <tr>
+        <td>
+            20        </td>
+        <td>
+            Средний        </td>
+        <td>Cотрите несколько символов клавишей BackSpace, а потом введите другие</td>
+                    </tr>
+        <tr>
+        <td>
+            21        </td>
+        <td>
+            Средний        </td>
+        <td>Передвиньте курсор стрелками в середину слова, и впишите туда несколько символов, включая пробел</td>
+                    </tr>
+        <tr>
+        <td>
+            22        </td>
+        <td>
+            Средний        </td>
+        <td>Передвиньте курсор мышью в середину слова, и впишите туда несколько символов, включая пробел</td>
+                    </tr>
+        <tr>
+        <td>
+            23        </td>
+        <td>
+            Средний        </td>
+        <td>Вставьте несколько символов командой &quot;Paste&quot; или сочетанием &quot;Ctrl-V&quot;</td>
+                    </tr>
+        <tr>
+        <td>
+            24        </td>
+        <td>
+            Средний        </td>
+        <td>Копируем и вставляем несколько абзацев. Проверяем обработку перевода строки.</td>
+                    </tr>
+        <tr>
+        <td>
+            25        </td>
+        <td>
+            Средний        </td>
+        <td>Нажмите кнопку отправки и попытайтесь в процессе отправки быстро ввести в форму ещё несколько символов</td>
+                    </tr>
+            </table>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> 
+(function (d, w, c) { (w[c] = w[c] || []).push(function() {
+	try { w.yaCounter43980704 = new Ya.Metrika({
+			id:43980704,
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true
+		}); }
+	catch(e) { } });
+	var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); };
+	s.type = "text/javascript"; s.async = true;
+	s.src = "https://mc.yandex.ru/metrika/watch.js";
+	if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); }
+	else { f(); } })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/43980704" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
